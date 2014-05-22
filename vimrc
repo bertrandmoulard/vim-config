@@ -112,11 +112,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'slim-template/vim-slim'
-Plugin 'nono/vim-handlebars'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-cucumber'
 Plugin 'juvenn/mustache.vim'
 Plugin 'Blackrush/vim-gocode'
 Plugin 'rosstimson/scala-vim-support'
@@ -154,3 +149,15 @@ endif
 
 au BufRead,BufNewFile *.hamlc set ft=haml
 
+" match Etsy coding standards
+let g:syntastic_php_phpcs_args="--report=csv --standard=".expand($HOME)."/development/Etsyweb/tests/standards/stable-ruleset.xml"
+let g:syntastic_php_checkers=['php','phpcs']
+
+"  tabs stuff
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+let g:ctrlp_max_files=0
+
+colorscheme jellybeans
