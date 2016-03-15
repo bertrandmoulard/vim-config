@@ -160,4 +160,4 @@ set softtabstop=4
 
 let g:ctrlp_max_files=0
 
-colorscheme jellybeans
+colorscheme smyck
